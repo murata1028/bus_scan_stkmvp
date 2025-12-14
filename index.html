@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>バススキャン</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div id="camera-container">
+    <video id="camera" autoplay playsinline></video>
+
+    <div id="scan-guide">
+      掲示板を枠内に収めてください
+    </div>
+
+    <div id="bus-candidates"></div>
+  </div>
+
+  <div id="result" class="hidden">
+    <h2>選択完了</h2>
+    <p id="selected-bus"></p>
+    <button onclick="location.reload()">もう一度</button>
+  </div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
